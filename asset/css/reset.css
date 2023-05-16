@@ -144,6 +144,10 @@ body {
   font-size: 20px;
 }
 
+.fs-24 {
+  font-size: 24px;
+}
+
 .fs-30s {
   font-size: 30px;
 }
@@ -209,6 +213,14 @@ body {
 
 /* margin */
 
+.mg-8 {
+  margin-bottom: 8px;
+}
+
+.mg-12 {
+  margin-bottom: 12px;
+}
+
 .mg-20 {
   margin-bottom: 20px;
 }
@@ -217,12 +229,9 @@ body {
   margin-bottom: 100px;
 }
 
-.mg-30 {
-  margin-right: 48px;
-}
 
-.mg-12 {
-  margin-right: 12px;
+.mg-32 {
+  margin-bottom: 32px;
 }
 
 .mg-16 {
@@ -235,4 +244,19 @@ body {
 
 .mg-24 {
   margin-bottom: 24px;
+}
+.mg-48 {
+  margin-bottom: 48px;
+}
+
+.mg-56 {
+  margin-bottom: 56px;
+}
+
+.mg-64 {
+  margin-bottom: 64px;
+}
+
+.center {
+  margin: 0 auto;
 }

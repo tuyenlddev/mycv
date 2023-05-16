@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/asset/css/reset.css">
     <link rel="stylesheet" href="/asset/css/style.css">
+    <link rel="stylesheet" href="/asset/css/responsive.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,500;0,700;1,600;1,700&display=swap" rel="stylesheet">
@@ -14,23 +15,33 @@
 <body>
 
         <nav class="navbar color-white">
-            <img src="/asset/icon/Logo.svg" alt="" class="logo mg-100"></img>
-            <ul class="nav--top fs-20s fw-400">
-                <li class="home active"><a href="#">HOME</a></li>
-                <li class="about"><a href="#">EXPERIENCE</a></li>
-                <li class="contact"><a href="#c">SKILL</a></li>
-                <li class="footer"><a href="#">PROJECT</a></li>
-                <li class="footer"><a href="#">BLOGS</a></li>
-                <li class="footer"><a href="#">CONTACT</a></li>
-            </ul>
+            <div>
+                <img src="/asset/icon/Logo.svg" alt="" class="logo mg-100"></img>
+                <ul class="nav--top fs-20s fw-400">
+                    <li class=" active"><a href="#home">HOME</a></li>
+                    <li class=""><a href="#experience">EXPERIENCE</a></li>
+                    <li class=""><a href="#skill">SKILL</a></li>
+                    <li class=""><a href="#contact">CONTACT</a></li>
+                </ul>
+            </div>
+
             <div class="nav--bottom">
                 <a href="#"><img src="/asset/icon/Instagram.svg" alt="" class="mg-20"></a>
                 <a href="#"><img src="/asset/icon/Facebook.svg" alt="" class="mg-20"></a>
                 <div class="line"></div>
             </div>
         </nav>
+
+        <nav class="navbar__mobile">
+            <img src="/asset/icon/icon-logo-mobile-menu.svg" alt="" class="logo"></img>
+            <ul class="navbar__mobile--right">
+                <li><a href="#"><img src="/asset/icon/icon-facebook-mobile.svg" alt="" class=""></a></li>
+                <li><a href="#"><img src="/asset/icon/icon-insta-mobile.svg" alt="" class=""></a></li>
+            </ul>
+        </nav>
+
         <div class="main__content">
-            <section class="home">
+            <section id="home">
                 <div class="home__content">
                         <div class="home__content--left">
                             <img class="icon__background" src="/asset/img/icon-under-name-home.svg" alt="">
@@ -38,10 +49,10 @@
                                 <div class="fw-400">MY NAME IS</div>
                                 <div class="fw-600">DINH TUYEN</div>
                             </h1>
-                            <div class="description fs-32s fw-700 font-italic">
+                            <div class="description fs-32s fw-700 font-italic mg-48">
                                 Digital Marketing <span class="font-normal fw-500">base in</span> Vietnam
                             </div>
-                            <button class="button__contact fs-18s">
+                            <button class="button__contact fs-18s mg-64">
                                 <a href="#">Let's talk with me</a><img src="/asset/icon/icon-button.svg" alt="">
                             </button>
                             <ul class="icon__contact fs-18s fw-700 font-italic">
@@ -54,12 +65,15 @@
                         </div>
                         
                 </div>
+            </section>
+
+            <section id="experience">
                 <div class="experience__content">
 
                     <div class="experience__content--left">
                          <div class="mg-16 fs-18s fw-600 font-italic">Experience</div>
-                         <h2 class="mg-24 fs-48s fw-700">MY EXPERIENCE</h2>
-                         <p class="descrip fs-18s fw-400">
+                         <h2 class="title mg-24 fs-48s fw-700">MY EXPERIENCE</h2>
+                         <p class="descrip fs-18s fw-400 mg-48">
                             Hello there! My name is Dinh Tuyen.
                             I am a web designer & developer, and I'm very passionate and dedicated to my work.
                         </p>
@@ -75,7 +89,7 @@
                                     <span class="fs-18s font-italic fw-600 fw-500">2023 - Present</span>
                                     <span class="fw-500 fs-16s fw-400">- Onemore Agency</span>
                                 </div>
-                                <div class="mg-20 fs-32s fw-600">TECHNICAL SEO</div>
+                                <div class="career mg-20 fs-32s fw-600">TECHNICAL SEO</div>
                                 <div class="line"></div>
                             </li>
                             <li class="">
@@ -83,7 +97,7 @@
                                     <span class="fs-18s font-italic fw-600 fw-500">2021 - 2023</span>
                                     <span class="fw-500 fs-16s fw-400">- MOC NGUYEN COFFEE CO.,LTD</span>
                                 </div>
-                                <div class="mg-20 fs-32s fw-600">DIGITAL MARKETING</div>
+                                <div class="career mg-20 fs-32s fw-600">DIGITAL MARKETING</div>
                                 <div class="line"></div>
                             </li>
                             <li class="">
@@ -91,7 +105,7 @@
                                     <span class="fs-18s font-italic fw-600 fw-500">02 - 07/2021</span>
                                     <span class="fw-500 fs-16s fw-400">- EFE Technology</span>
                                 </div>
-                                <div class="mg-20 fs-32s fw-600">UI/UX DESIGNER</div>
+                                <div class="career mg-20 fs-32s fw-600">UI/UX DESIGNER</div>
                                 <div class="line"></div>
                             </li>
                             <li class="">
@@ -99,27 +113,266 @@
                                     <span class="fs-18s font-italic fw-600 fw-500">2020 - 2022</span>
                                     <span class="fw-500 fs-16s fw-400">- University of Economics - The University of Danang</span>
                                 </div>
-                                <div class="mg-20 fs-32s fw-600">FREELANCE GRAPHIC DESIGNER</div>
+                                <div class="career mg-20 fs-32s fw-600">FREELANCE GRAPHIC DESIGNER</div>
                                 <div class="line"></div>
                             </li>
                         </ul>
                     </div>
 
                 </div>
+            </section>
 
+            <section id="skill">
                 <div class="specialties">
-                    <div class="">Skill</div>
-                    <h2>MY SPECIALTIES</h2>
+                    <div class="fs-18s font-italic fw-600 mg-16">Skill</div>
+                    <h2 class="title fs-48s fw-700 mg-48">MY SPECIALTIES</h2>
                     <ul class="specialties__content">
-                        <li>
-                            <div class="skill__name">
-                                TECHNICAL SEO
+                        <li class="skill__child">
+                            <input type="checkbox" name="" id="seemore--1" class="see__more--1">
+                            <label for="seemore--1" class="skill__name fs-32s fw-700">
+                                <div class="dots"></div> <p class="title__name">TECHNICAL SEO</p>
+                            </label>
+                            <div class="content__left">
+                                    <div class="description fs-16s">
+                                    <p>
+                                        You can customize a template or make your own from scratch, 
+    with an immersive library at your disposal. You can customize a template
+                                    </p> 
+                                    <p class="description__full fs-16s">
+                                        You can customize a template or make your own from scratch, 
+                                with an immersive library at your disposal. You can customize a template. You can customize a template or make your own from scratch, 
+                                with an immersive library at your disposal. You can customize a template. You can customize a template or make your own from scratch, 
+                                with an immersive library at your disposal. You can customize a template
+                                    </p>                                  
+                                    </div>
+
+                                    <div class="content__icon">
+                                        <label for="seemore--1" class="icon__seemore">
+                                            <img src="/asset/img/add-section-experencie.svg" alt="" class="">
+                                        </label>
+                                        <label for="seemore--1" class="icon__seeless">
+                                            <img src="/asset/img/apart-from.svg" alt="" class="">
+                                        </label>
+                                    </div>
                             </div>
-                            
                         </li>
+                        <li class="skill__child">
+                            <input type="checkbox" name="" id="seemore--2" class="see__more--2">
+                            <label for="seemore--2" class="skill__name fs-32s fw-700">
+                                <div class="dots"></div> <p class="title__name">FACEBOOK ADS</p>
+                            </label>
+                            <div class="content__left">
+                                    <div class="description fs-16s">
+                                    <p>
+                                        You can customize a template or make your own from scratch, 
+    with an immersive library at your disposal. You can customize a template
+                                    </p> 
+                                    <p class="description__full fs-16s">
+                                        You can customize a template or make your own from scratch, 
+                                with an immersive library at your disposal. You can customize a template. You can customize a template or make your own from scratch, 
+                                with an immersive library at your disposal. You can customize a template. You can customize a template or make your own from scratch, 
+                                with an immersive library at your disposal. You can customize a template
+                                    </p>                                  
+                                    </div>
+
+                                    <div class="content__icon">
+                                        <label for="seemore--2" class="icon__seemore">
+                                            <img src="/asset/img/add-section-experencie.svg" alt="" class="">
+                                        </label>
+                                        <label for="seemore--2" class="icon__seeless">
+                                            <img src="/asset/img/apart-from.svg" alt="" class="">
+                                        </label>
+                                    </div>
+                            </div>
+                        </li>
+                        <li class="skill__child">
+                            <input type="checkbox" name="" id="seemore--3" class="see__more--3">
+                            <label for="seemore--3" class="skill__name fs-32s fw-700">
+                                <div class="dots"></div> <p class="title__name">WEB DESIGN</p>
+                            </label>
+                            <div class="content__left">
+                                    <div class="description fs-16s">
+                                    <p>
+                                        You can customize a template or make your own from scratch, 
+    with an immersive library at your disposal. You can customize a template
+                                    </p> 
+                                    <p class="description__full fs-16s">
+                                        You can customize a template or make your own from scratch, 
+                                with an immersive library at your disposal. You can customize a template. You can customize a template or make your own from scratch, 
+                                with an immersive library at your disposal. You can customize a template. You can customize a template or make your own from scratch, 
+                                with an immersive library at your disposal. You can customize a template
+                                    </p>                                  
+                                    </div>
+
+                                    <div class="content__icon">
+                                        <label for="seemore--3" class="icon__seemore">
+                                            <img src="/asset/img/add-section-experencie.svg" alt="" class="">
+                                        </label>
+                                        <label for="seemore--3" class="icon__seeless">
+                                            <img src="/asset/img/apart-from.svg" alt="" class="">
+                                        </label>
+                                    </div>
+                            </div>
+                        </li>
+                        <li class="skill__child">
+                            <input type="checkbox" name="" id="seemore--4" class="see__more--4">
+                            <label for="seemore--4" class="skill__name fs-32s fw-700">
+                                <div class="dots"></div> <p class="title__name">MULTIMEDIA DESIGN</p>
+                            </label>
+                            <div class="content__left">
+                                    <div class="description fs-16s">
+                                    <p>
+                                        You can customize a template or make your own from scratch, 
+    with an immersive library at your disposal. You can customize a template
+                                    </p> 
+                                    <p class="description__full fs-16s">
+                                        You can customize a template or make your own from scratch, 
+                                with an immersive library at your disposal. You can customize a template. You can customize a template or make your own from scratch, 
+                                with an immersive library at your disposal. You can customize a template. You can customize a template or make your own from scratch, 
+                                with an immersive library at your disposal. You can customize a template
+                                    </p>                                  
+                                    </div>
+
+                                    <div class="content__icon">
+                                        <label for="seemore--4" class="icon__seemore">
+                                            <img src="/asset/img/add-section-experencie.svg" alt="" class="">
+                                        </label>
+                                        <label for="seemore--4" class="icon__seeless">
+                                            <img src="/asset/img/apart-from.svg" alt="" class="">
+                                        </label>
+                                    </div>
+                            </div>
+                        </li>
+                        
+                        
                     </ul>
                 </div>
+
             </section>
+
+            <section id="project">
+                <div class="recent__project">
+                    <p class="fs-18s font-italic fw-600 mg-16">Work</p>
+                    <h2 class="title fs-48s fw-700 mg-48">
+                        RECENT PROJECT
+                    </h2>
+                    <div class="project__showcontent">
+                        <div class="child mg-56">
+                            <div class="content__project">
+                                <div>
+                                <p class="content__project--top fs-18s font-italic fw-600 mg-16">Technical SEO</p>
+                                <h3 class="fs-30s fw-700 mg-32 project__name">Onemore Agency</h3>
+                                </div>
+                                <img src="/asset/icon/open-project.svg" class="content__project--img" alt="">
+                            </div>
+                            <img src="/asset/img/project-1.png" alt="" >                   
+                        </div>
+                        <div class="child mg-56">
+                            <div class="content__project">
+                                <div>
+                                <p class="content__project--top fs-18s font-italic fw-600 mg-16">Technical SEO</p>
+                                <h3 class="fs-30s fw-700 mg-32 project__name">Onemore Agency</h3>
+                                </div>
+                                <img src="/asset/icon/open-project.svg" class="content__project--img" alt="">
+                            </div>
+                            <img src="/asset/img/project-1.png" alt="" >                   
+                        </div>
+                        <div class="child mg-56">
+                            <div class="content__project">
+                                <div>
+                                <p class="content__project--top fs-18s font-italic fw-600 mg-16">Technical SEO</p>
+                                <h3 class="fs-30s fw-700 mg-32 project__name">Onemore Agency</h3>
+                                </div>
+                                <img src="/asset/icon/open-project.svg" class="content__project--img" alt="">
+                            </div>
+                            <img src="/asset/img/project-1.png" alt="" >                   
+                        </div>
+                        <div class="child mg-56">
+                            <div class="content__project">
+                                <div>
+                                <p class="content__project--top fs-18s font-italic fw-600 mg-16">Technical SEO</p>
+                                <h3 class="fs-30s fw-700 mg-32 project__name">Onemore Agency</h3>
+                                </div>
+                                <img src="/asset/icon/open-project.svg" class="content__project--img" alt="">
+                            </div>
+                            <img src="/asset/img/project-1.png" alt="" >                   
+                        </div>
+                    </div>
+                    <button class="button__contact fs-18s center">
+                        <a href="#">Load more</a><img src="/asset/icon/icon-button.svg" alt="">
+                    </button>
+                </div>
+            </section>
+
+            <section id="contact">
+                <div class="contact">
+                    <p class="fs-18s font-italic fw-600 mg-16">Thanks for watching!</p>
+                    <h2 class="contact__me fs-48s fw-700 mg-48">
+                        CONTACT ME...
+                    </h2>
+                    <div class="contact__content">
+                        <div class="contact__content--left">
+                            <img src="/asset/img/avatar.png" alt="" class="avatar mg-32">
+                            <h3 class="contact__name fs-48s fw-700 text-center mg-12">LE DINH TUYEN</h3>
+                            <div class="description fw-700 font-italic fs-24 text-center mg-16">
+                                Digital Marketing <span class="font-normal fw-500">base in</span> Vietnam
+                            </div>
+                            <button class="contact__downloadCV fs-18s center fw-500">
+                                <a href="#">Download CV</a><img src="/asset/icon/icon-download-cv.svg" alt="">
+                            </button>
+                        </div>
+                        <div class="contact__content--right">
+                            <div class="infor__contact">
+                                <div class="infor__contact--chill mg-24">
+                                    <img src="/asset/icon/icon-phone.svg" alt="" class="icon">
+                                    <p class="fs-18s fw-700 font-italic content__infor">038 898 3056</p>
+                                </div>
+                                <div class="infor__contact--chill mg-24">
+                                    <img src="/asset/icon/icon-phone.svg" alt="" class="icon">
+                                    <p class="fs-18s fw-700 font-italic content__infor">038 898 3056</p>
+                                </div>
+                                <div class="infor__contact--chill mg-24">
+                                    <img src="/asset/icon/icon-phone.svg" alt="" class="icon">
+                                    <p class="fs-18s fw-700 font-italic content__infor">038 898 3056</p>
+                                </div>
+                                <div class="infor__contact--chill mg-24">
+                                    <img src="/asset/icon/icon-phone.svg" alt="" class="icon">
+                                    <p class="fs-18s fw-700 font-italic content__infor">038 898 3056</p>
+                                </div>  
+                                <div class="infor__contact--line mg-48"></div>
+                            </div>
+
+                            <div class="infor__descrip mg-64">
+                                <div class="infor__descrip--child">
+                                    <div class="mg-20">
+                                        <div class="descrip__years fs-48s fw-700">3+</div>
+                                        <p class="fs-18s fw-700 font-italic">Years experience...</p>
+                                    </div>
+                                    <p class="fs-18s">
+                                        Hello there! My name is Jacob Jones. I am a web designer & developer, and I'm very passionate and dedicated to my work.
+                                    </p>
+                                </div>
+                                <div class="infor__descrip--child">
+                                    <div class="mg-20">
+                                        <div class="descrip__years fs-48s fw-700">3+</div>
+                                        <p class="fs-18s fw-700 font-italic">Years experience...</p>
+                                    </div>
+                                    <p class="fs-18s">
+                                        Hello there! My name is Jacob Jones. I am a web designer & developer, and I'm very passionate and dedicated to my work.
+                                    </p>
+                                </div>
+
+                            </div>
+                            <div class="infor__quotes">
+                                <img src="/asset/icon/icon-quotes.svg" class="icon" alt="">
+                                <p class="quotes color-white fs-20s fw-600 font-italic">“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus sed sit ultrices et sed metus sollicitudin.”</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
         </div>
 
 
